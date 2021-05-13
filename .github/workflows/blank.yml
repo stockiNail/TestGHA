@@ -48,4 +48,6 @@ jobs:
           SOURCE_BRANCH: ${{ steps.branch_name.outputs.SOURCE_BRANCH }}
           SOURCE_TAG: ${{ steps.branch_name.outputs.SOURCE_TAG }}
       - name: Adds Charba lib to Maven
-        run: mvn install:install-file -Dfile=./lib/charba-${{ steps.branch_name.outputs.SOURCE_TAG }}.jar -DgroupId=org.pepstock -DartifactId=charba -Dversion=${{ steps.branch_name.outputs.SOURCE_TAG }} -Dpackaging=jar
+        run: ant test
+        env:
+          REPO_NAME: ${{ github.event.repository.name }}
