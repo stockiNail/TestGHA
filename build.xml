@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<project name="CharbaShowcaseJ2CL" default="test" basedir=".">
+
+	<property environment="env"/>
+
+  <target name="test">
+		<echo>${env.REPO_NAME}</echo>
+	</target>
+
+</project>
