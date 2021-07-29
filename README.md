@@ -3,7 +3,7 @@ Test GHAh
 
 <table>
   <tr>
-    <td>Bar</td>
+    <td align="center">Bar</td>
 	<td>Horizontal bar</td>
 	<td>Line</td>
 	<td>Vertical line</td>
