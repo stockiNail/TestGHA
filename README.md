@@ -53,12 +53,11 @@ Test GHAh
   <tr style="border-bottom: 0px">
     <td><img width="200px" src="https://raw.githubusercontent.com/pepstock-org/Charba-Wiki/master/static/img/galleryMeter.png"></td>
     <td><img width="200px" src="https://raw.githubusercontent.com/pepstock-org/Charba-Wiki/master/static/img/galleryGauge.png"></td>
-    <td colspan="2"></td>
+    <td colspan="2" rowsspan="2"></td>
   </tr>  
   <tr style="border-top: 0px">
     <td>Meter</td>
     <td>Gauge</td>
-    <td colspan="2"></td>
   </tr>
 
 </table>  
