@@ -50,7 +50,7 @@ Test GHAh
 	<td>Choropleth</td>
 	<td>Bubblke Map</td>
   </tr>
-  <tr>
+  <tr style="border-bottom: 0px">
     <td><img width="200px" src="https://raw.githubusercontent.com/pepstock-org/Charba-Wiki/master/static/img/galleryMeter.png"></td>
     <td><img width="200px" src="https://raw.githubusercontent.com/pepstock-org/Charba-Wiki/master/static/img/galleryGauge.png"></td>
   </tr>  
