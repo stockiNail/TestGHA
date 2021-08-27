@@ -1,66 +1,66 @@
 # TestGHA
 Test GHAh
 
-<table>
-  <tr>
-    <td><img width="200px" src="https://raw.githubusercontent.com/pepstock-org/Charba-Wiki/master/static/img/galleryBar.png"></td>
-    <td><img width="200px" src="https://raw.githubusercontent.com/pepstock-org/Charba-Wiki/master/static/img/galleryHorizontalBar.png"></td>
-	<td><img width="200px" src="https://raw.githubusercontent.com/pepstock-org/Charba-Wiki/master/static/img/galleryLine.png"></td>
-    <td><img width="200px" src="https://raw.githubusercontent.com/pepstock-org/Charba-Wiki/master/static/img/galleryVerticalLine.png"></td>
-  </tr>
-  <tr>
-    <td align="center">Bar</td>
-	<td>Horizontal bar</td>
-	<td>Line</td>
-	<td>Vertical line</td>
-  </tr>
-  <tr>
-    <td><img width="200px" src="https://raw.githubusercontent.com/pepstock-org/Charba-Wiki/master/static/img/galleryScatter.png"></td>
-    <td><img width="200px" src="https://raw.githubusercontent.com/pepstock-org/Charba-Wiki/master/static/img/galleryDoughnut.png"></td>
-	<td><img width="200px" src="https://raw.githubusercontent.com/pepstock-org/Charba-Wiki/master/static/img/galleryPie.png"></td>
-    <td><img width="200px" src="https://raw.githubusercontent.com/pepstock-org/Charba-Wiki/master/static/img/galleryPolarArea.png"></td>
-  </tr>
-  <tr>
-    <td>Scatter</td>
-	<td>Doughnut</td>
-	<td>Pie</td>
-	<td>Polar area</td>
-  </tr>
-  <tr>
-    <td><img width="200px" src="https://raw.githubusercontent.com/pepstock-org/Charba-Wiki/master/static/img/galleryRadar.png"></td>
-    <td><img width="200px" src="https://raw.githubusercontent.com/pepstock-org/Charba-Wiki/master/static/img/galleryBubble.png"></td>
-	<td><img width="200px" src="https://raw.githubusercontent.com/pepstock-org/Charba-Wiki/master/static/img/galleryTimeseries.png"></td>
-    <td><img width="200px" src="https://raw.githubusercontent.com/pepstock-org/Charba-Wiki/master/static/img/galleryStacked.png"></td>
-  </tr>  
-  <tr>
-    <td>Radar</td>
-	<td>Bubble</td>
-	<td>Time series</td>
-	<td>Stacked</td>
-  </tr>
-  <tr>
-    <td><img width="200px" src="https://raw.githubusercontent.com/pepstock-org/Charba-Wiki/master/static/img/galleryMeter.png"></td>
-    <td><img width="200px" src="https://raw.githubusercontent.com/pepstock-org/Charba-Wiki/master/static/img/galleryGauge.png"></td>
-	<td><img width="200px" src="https://raw.githubusercontent.com/pepstock-org/Charba-Wiki/master/static/img/galleryChoropleth.png"></td>
-    <td><img width="200px" src="https://raw.githubusercontent.com/pepstock-org/Charba-Wiki/master/static/img/galleryBubbleMap.png"></td>
-  </tr>  
-  <tr>
-    <td>Meter</td>
-	<td>Gauge</td>
-	<td>Choropleth</td>
-	<td>Bubblke Map</td>
-  </tr>
+<div style="display:table">
+  <div style="display:table-row">
+    <div style="display:table-cell"><img width="200px" src="https://raw.githubusercontent.com/pepstock-org/Charba-Wiki/master/static/img/galleryBar.png"></div>
+    <div style="display:table-cell"><img width="200px" src="https://raw.githubusercontent.com/pepstock-org/Charba-Wiki/master/static/img/galleryHorizontalBar.png"></div>
+	<div style="display:table-cell"><img width="200px" src="https://raw.githubusercontent.com/pepstock-org/Charba-Wiki/master/static/img/galleryLine.png"></div>
+    <div style="display:table-cell"><img width="200px" src="https://raw.githubusercontent.com/pepstock-org/Charba-Wiki/master/static/img/galleryVerticalLine.png"></div>
+  </div>
+  <div style="display:table-row">
+    <td align="center">Bar</div>
+	<div style="display:table-cell">Horizontal bar</div>
+	<div style="display:table-cell">Line</div>
+	<div style="display:table-cell">Vertical line</div>
+  </div>
+  <div style="display:table-row">
+    <div style="display:table-cell"><img width="200px" src="https://raw.githubusercontent.com/pepstock-org/Charba-Wiki/master/static/img/galleryScatter.png"></div>
+    <div style="display:table-cell"><img width="200px" src="https://raw.githubusercontent.com/pepstock-org/Charba-Wiki/master/static/img/galleryDoughnut.png"></div>
+	<div style="display:table-cell"><img width="200px" src="https://raw.githubusercontent.com/pepstock-org/Charba-Wiki/master/static/img/galleryPie.png"></div>
+    <div style="display:table-cell"><img width="200px" src="https://raw.githubusercontent.com/pepstock-org/Charba-Wiki/master/static/img/galleryPolarArea.png"></div>
+  </div>
+  <div style="display:table-row">
+    <div style="display:table-cell">Scatter</div>
+	<div style="display:table-cell">Doughnut</div>
+	<div style="display:table-cell">Pie</div>
+	<div style="display:table-cell">Polar area</div>
+  </div>
+  <div style="display:table-row">
+    <div style="display:table-cell"><img width="200px" src="https://raw.githubusercontent.com/pepstock-org/Charba-Wiki/master/static/img/galleryRadar.png"></div>
+    <div style="display:table-cell"><img width="200px" src="https://raw.githubusercontent.com/pepstock-org/Charba-Wiki/master/static/img/galleryBubble.png"></div>
+	<div style="display:table-cell"><img width="200px" src="https://raw.githubusercontent.com/pepstock-org/Charba-Wiki/master/static/img/galleryTimeseries.png"></div>
+    <div style="display:table-cell"><img width="200px" src="https://raw.githubusercontent.com/pepstock-org/Charba-Wiki/master/static/img/galleryStacked.png"></div>
+  </div>  
+  <div style="display:table-row">
+    <div style="display:table-cell">Radar</div>
+	<div style="display:table-cell">Bubble</div>
+	<div style="display:table-cell">Time series</div>
+	<div style="display:table-cell">Stacked</div>
+  </div>
+  <div style="display:table-row">
+    <div style="display:table-cell"><img width="200px" src="https://raw.githubusercontent.com/pepstock-org/Charba-Wiki/master/static/img/galleryMeter.png"></div>
+    <div style="display:table-cell"><img width="200px" src="https://raw.githubusercontent.com/pepstock-org/Charba-Wiki/master/static/img/galleryGauge.png"></div>
+	<div style="display:table-cell"><img width="200px" src="https://raw.githubusercontent.com/pepstock-org/Charba-Wiki/master/static/img/galleryChoropleth.png"></div>
+    <div style="display:table-cell"><img width="200px" src="https://raw.githubusercontent.com/pepstock-org/Charba-Wiki/master/static/img/galleryBubbleMap.png"></div>
+  </div>  
+  <div style="display:table-row">
+    <div style="display:table-cell">Meter</div>
+	<div style="display:table-cell">Gauge</div>
+	<div style="display:table-cell">Choropleth</div>
+	<div style="display:table-cell">Bubblke Map</div>
+  </div>
   <tr style="border-bottom: 0px">
-    <td><img width="200px" src="https://raw.githubusercontent.com/pepstock-org/Charba-Wiki/master/static/img/galleryMeter.png"></td>
-    <td><img width="200px" src="https://raw.githubusercontent.com/pepstock-org/Charba-Wiki/master/static/img/galleryGauge.png"></td>
-    <td colspan="2" rowsspan="2" style="border-bottom: 0px;"></td>
-  </tr>  
+    <div style="display:table-cell"><img width="200px" src="https://raw.githubusercontent.com/pepstock-org/Charba-Wiki/master/static/img/galleryMeter.png"></div>
+    <div style="display:table-cell"><img width="200px" src="https://raw.githubusercontent.com/pepstock-org/Charba-Wiki/master/static/img/galleryGauge.png"></div>
+    <td colspan="2" rowsspan="2" style="border-bottom: 0px;"></div>
+  </div>  
   <tr style="border-top: 0px">
-    <td>Meter</td>
-    <td>Gauge</td>
-  </tr>
+    <div style="display:table-cell">Meter</div>
+    <div style="display:table-cell">Gauge</div>
+  </div>
 
-</table>  
+</div>  
 
 
 | 1 | 2 | 3 | 4 
