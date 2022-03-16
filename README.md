@@ -1,4 +1,4 @@
 # TestGHA
 Test GHAh
 
-normal <font size="24">BIG</font> normal
+normal <div style="font-size: 24px;">BIG</div> normal
