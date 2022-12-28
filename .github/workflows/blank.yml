@@ -39,7 +39,7 @@ jobs:
       
       - name: Branch
         id: branch
-        run: echo "::set-output name=version::${TAG:1}"
+        run: echo "::set-output name=version::${TAG}"
         env:
           TAG: ${{ github.event.release.tag_name }}
       - name: Build base image
