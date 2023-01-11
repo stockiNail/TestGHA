@@ -3,14 +3,19 @@
 name: CI
 
 # Controls when the action will run. 
-on:
+#on:
   # Triggers the workflow on push or pull request events but only for the main branch
   #push:
   #  branches:
   #    - main
-  release:
+  ##release:
     #- '[0-9]+.[0-9]+'
-    types: [published]
+  ##  types: [published]
+
+on:
+  push:
+    tags:
+      - '[0-9]+.[0-9]+'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -30,7 +35,8 @@ jobs:
       - name: Branch
         id: branch
       #  run: echo "version=${TAG}" >> $GITHUB_OUTPUT
-        run: echo "version=${{ github.event.release.tag_name }}" >> $GITHUB_OUTPUT
+      #  run: echo "version=${{ github.event.release.tag_name }}" >> $GITHUB_OUTPUT
+        run: echo "version=${{ GITHUB_REF#refs/tags/ }}" >> $GITHUB_OUTPUT
       #  env:
       #    TAG: ${{ github.event.release.tag_name }}
       - name: Build base image
