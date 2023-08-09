@@ -23,7 +23,7 @@ jobs:
         id: branch
       #  run: echo "version=${TAG}" >> $GITHUB_OUTPUT
       #  run: echo "version=${{ github.event.release.tag_name }}" >> $GITHUB_OUTPUT
-        run: echo "version=${{ github.event_name }}" >> $GITHUB_OUTPUT
+        run: echo "version=${{ github.event.pull_request.draft }}" >> $GITHUB_OUTPUT
       #  env:
       #    TAG: ${{ github.event.release.tag_name }}
       - name: Build base image
