@@ -9,7 +9,9 @@ on:
       - reopened
       - synchronize
       - ready_for_review
-
+ push:
+    branch:
+      - main
 jobs:
   # This workflow contains a single job called "build"
   build:
