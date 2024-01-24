@@ -1,38 +1,25 @@
 # This is a basic workflow to help you get started with Actions stock
 
-name: CI
+name: Check Release Tag Name
 
 on:
-  pull_request:
-    types:
-      - opened
-      - reopened
-      - synchronize
-      - ready_for_review
-  push:
-    branches:
-      - main
+  release:
+    types: [published]
+
 jobs:
-  # This workflow contains a single job called "build"
-  build:
-    if: github.event_name == 'push' || (github.event_name == 'pull_request' && !github.event.pull_request.draft)
-    # The type of runner that the job will run on
+  check-tag:
     runs-on: ubuntu-latest
-      
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
-      
-      - name: Branch
-        id: branch
-      #  run: echo "version=${TAG}" >> $GITHUB_OUTPUT
-      #  run: echo "version=${{ github.event.release.tag_name }}" >> $GITHUB_OUTPUT
-        run: echo "version=${{ github.event.pull_request.draft }} ${{ github.event_name }} != 'pull_request' || ${{ github.event.pull_request.draft }} == false)" >> $GITHUB_OUTPUT
-      #  env:
-      #    TAG: ${{ github.event.release.tag_name }}
-      - name: Build base image
-        run: |
-          echo $VERSION
-        env:
-          VERSION: ${{ steps.branch.outputs.version }}
+    - name: Check Tag Name
+      env:
+        TAG_NAME: ${{ github.event.release.tag_name }}
+        REGEXP: '^v[0-9]+\.[0-9]+\.[0-9]+$' # Modifica questa regexp come necessario
+      run: |
+        if [[ "$TAG_NAME" =~ $REGEXP ]]; then
+          echo "Il tag matcha con la regexp."
+          # Aggiungi qui ulteriori azioni se la regexp corrisponde
+        else
+          echo "Il tag non matcha con la regexp."
+          # Opzionalmente, puoi fallire il workflow se non c'è match
+          exit 1
+        fi
