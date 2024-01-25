@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: Rimuovi la 'v' dalla versione
         id: set_version
-        run: echo "::set-output name=version::$(echo 'v1.1.1' | sed 's/^v//')"
+        run: echo "version=$(echo 'v1.1.1' | sed 's/^v//')" >> $GITHUB_OUTPUT
       
       - name: Usa la versione modificata
         run: echo "La versione è ${{ steps.set_version.outputs.version }}"
