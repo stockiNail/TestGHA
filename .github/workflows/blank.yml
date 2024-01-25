@@ -3,31 +3,18 @@
 name: Check Release Tag Name
 
 on:
-  release:
-    types: [published]
+  push:
+    branches:
+      - master
 
 jobs:
-  check-tag:
+  example_job:
     runs-on: ubuntu-latest
     steps:
-      - name: Check Tag Name
-        env:
-          TAG_NAME: ${{ github.event.release.tag_name }}
-          REGEXP: '^v[0-9]+\.[0-9]+\.[0-9]+$' # Modifica questa regexp come necessario
-        run: |
-          if [[ "$TAG_NAME" =~ $REGEXP ]]; then
-            echo "Il tag matcha con la regexp."
-            # Aggiungi qui ulteriori azioni se la regexp corrisponde
-          else
-            echo "Il tag non matcha con la regexp."
-            # Opzionalmente, puoi fallire il workflow se non c'è match
-            exit 1
-          fi
+      - name: Rimuovi la 'v' dalla versione
+        id: set_version
+        run: echo "::set-output name=version::$(echo 'v1.1.1' | sed 's/^v//')"
+      
+      - name: Usa la versione modificata
+        run: echo "La versione è ${{ steps.set_version.outputs.version }}"
 
-  publish:
-    runs-on: ubuntu-latest
-    needs: check-tag
-    steps:
-      - name: Publish
-        run: |
-          echo "Publish"
