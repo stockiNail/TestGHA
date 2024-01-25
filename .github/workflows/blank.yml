@@ -1,11 +1,11 @@
 # This is a basic workflow to help you get started with Actions stock
 
-name: Check Release Tag Name
+name: CI
 
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   example_job:
