@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Rimuovi la 'v' dalla versione
-        run: echo VERSION=$(echo ${GITHUB_REF#refs/tags/}) >> $GITHUB_ENV
+        run: echo "VERSION=${${GITHUB_REF#refs/tags/}//v/}" >> $GITHUB_ENV
       - name: Usa la versione modificata
         run: echo "La versione è $VERSION"
 
